@@ -97,16 +97,6 @@ if app_mode == 'Prediction':
         sex = sex_mapping[sex]
         smoker = smoker_mapping[smoker]
         region = region_mapping[region]
-        age_bmi =
-        age_group =
-        bmi_category =
-        bmi_smoker = 
-        age_smoker = 
-
-        df['bmi_smoker'] = df['bmi'] * df['smoker_encoded']  # Interaction BMI x Smoker
-df['age_smoker'] = df['age'] * df['smoker_encoded'] 
-
-df['age_bmi'] = df['age'] * df['bmi']
 
         input_data = {
             "age": age,
@@ -115,11 +105,6 @@ df['age_bmi'] = df['age'] * df['bmi']
             "children": children,
             "smoker": smoker,
             "region": region,
-            "age_bmi",
-            "age_group",
-            "bmi_category",
-            "bmi_smoker",
-            "age_smoker",
         }
 
         # Ajouter un bouton pour effectuer une prédiction
