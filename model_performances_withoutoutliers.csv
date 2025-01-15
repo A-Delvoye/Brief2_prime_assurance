@@ -1,5 +1,5 @@
 Model,MSE,R2,Best Params,Training Time (s),Best Model,Feature Name
-LinearRegression,14029743.84730456,0.9031869199495817,,0.025601625442504883,"Pipeline(steps=[('preprocessor',
+LinearRegression,14029743.84730456,0.9031869199495817,,0.020086288452148438,"Pipeline(steps=[('preprocessor',
                  ColumnTransformer(remainder='passthrough',
                                    transformers=[('num', StandardScaler(),
                                                   ['age', 'bmi', 'children',
@@ -12,7 +12,7 @@ LinearRegression,14029743.84730456,0.9031869199495817,,0.025601625442504883,"Pip
                                                   ['region', 'age_group',
                                                    'bmi_category'])])),
                 ('model', LinearRegression())])","['age', 'bmi', 'children', 'bmi_smoker', 'age_smoker', 'age_bmi', 'smoker', 'sex', 'region', 'age_group', 'bmi_category']"
-Ridge,11574973.120914036,0.9201262110318724,{'model__alpha': 81.96},0.2826108932495117,"Pipeline(steps=[('preprocessor',
+Ridge,11574973.120914036,0.9201262110318724,{'model__alpha': 81.96},0.20644760131835938,"Pipeline(steps=[('preprocessor',
                  Pipeline(steps=[('preprocessor',
                                   ColumnTransformer(remainder='passthrough',
                                                     transformers=[('num',
@@ -53,7 +53,7 @@ Ridge,11574973.120914036,0.9201262110318724,{'model__alpha': 81.96},0.2826108932
  'sex age_group' 'sex bmi_category' 'region^2' 'region age_group'
  'region bmi_category' 'age_group^2' 'age_group bmi_category'
  'bmi_category^2']"
-Lasso,11595626.71140969,0.9199836897049154,{'model__alpha': 47.07},0.5715780258178711,"Pipeline(steps=[('preprocessor',
+Lasso,11595626.71140969,0.9199836897049154,{'model__alpha': 47.07},0.5478005409240723,"Pipeline(steps=[('preprocessor',
                  Pipeline(steps=[('preprocessor',
                                   ColumnTransformer(remainder='passthrough',
                                                     transformers=[('num',
@@ -94,7 +94,7 @@ Lasso,11595626.71140969,0.9199836897049154,{'model__alpha': 47.07},0.57157802581
  'sex age_group' 'sex bmi_category' 'region^2' 'region age_group'
  'region bmi_category' 'age_group^2' 'age_group bmi_category'
  'bmi_category^2']"
-ElasticNet,11538503.977864623,0.9203778685178422,"{'model__alpha': 0.8775, 'model__l1_ratio': 0.897}",0.7622783184051514,"Pipeline(steps=[('preprocessor',
+ElasticNet,11538503.977864623,0.9203778685178422,"{'model__alpha': 0.8775, 'model__l1_ratio': 0.897}",0.7948074340820312,"Pipeline(steps=[('preprocessor',
                  Pipeline(steps=[('preprocessor',
                                   ColumnTransformer(remainder='passthrough',
                                                     transformers=[('num',
