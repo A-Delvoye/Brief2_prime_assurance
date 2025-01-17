@@ -2,3 +2,11 @@ pandas
 matplotlib
 seaborn
 scikit-learn
+missingno
+statsmodels
+streamlit
+scipy
+sklearn
+
+
+
